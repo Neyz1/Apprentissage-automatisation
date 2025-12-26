@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Jour/Nuit + Sidebar rétractable</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Header : bouton thème -->
+  <header class="header">
+    <button id="theme-toggle" aria-label="Changer le thème (Jour/Nuit)">
+      🌙/☀️
+    </button>
+    <h1>Mon Site Web</h1>
+  </header>
+
+  <!-- Sidebar : barre latérale verticale -->
+  <aside id="sidebar" class="sidebar">
+    <nav>
+      <ul>
+        <li class="spacer"></li>
+        <li class="spacer"></li>
+        <li><a href="../">Accueil</a></li>
+        <li><a href="#">Automatisation 1</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Contenu principal -->
+  <main id="content" class="content">
+   <img src="Auto 1.png" alt="Description courte de l’image">
+  
+   <p>Email Trigger (IMAP) sert à détecter l'arriver d'un mail dans une boîte mail afin d'effectuer le reste du workflow </p>
+  
+   <p>Note (set) permet de récuperer les données du mail réceptionner et de la stocker pour l'utiliser dans l'étape suivante</p>
+  
+   <p>IA est un HTTP REQUEST qui permet d'envoyer des information à une IA stockere en local sur mon pc grâce à LM STUDIO. Il traîte les données de Note et les envoie à la prochaine étape</p>
+  
+   <p>Send Email permet d'envoyer la réponse de l'IA à une boîte mail spécifier</p>
+
+</main>
+
+  <!-- Bouton de repli/affichage du sidebar -->
+  <button id="sidebar-toggle" aria-label="Ouvrir / Fermer la barre latérale">
+    ☰
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
